@@ -1,0 +1,6 @@
+<h1>Destinations<h1>
+<hr>
+<% @destinations.each do |destination| %>
+        <p><a href="/destinations/<%= destination.id %>"><%= destination.title%>
+        </a></h3>
+<% end %>

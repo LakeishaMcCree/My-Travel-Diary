@@ -1,0 +1,13 @@
+<h1><%= @destination.title %></h1>
+<p><%= @destination.date%></p>
+<p><%= @destination.season%></p>
+<p><%= @destination.location%></p>
+<p><%= @destination.attractions%></p>
+<p><%= @destination.restaurants%></p>
+<p><%= @destination.shopping%></p>
+
+<form action="/destinations/<%= @destination.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+
+    <input type="submit" value="Delete">
+</form>
